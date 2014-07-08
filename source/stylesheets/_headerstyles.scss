@@ -1,0 +1,78 @@
+#headerwrap{
+  width:auto;
+  max-height: 200px;
+  overflow: hidden;
+  margin: 0 auto;
+  background-image: url('https://s3.amazonaws.com/myfangate.com/vydiaemail/headerbackground.jpg');
+  background-size: cover;
+  #overlay{
+    width:100%;
+    height: 100%;
+    max-height: 200px;
+    background: #42a3f5; /* Old browsers */
+    background: -moz-linear-gradient(top, #42a3f5 0%, #ca12bc 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#42a3f5), color-stop(100%,#ca12bc)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #42a3f5 0%,#ca12bc 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #42a3f5 0%,#ca12bc 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #42a3f5 0%,#ca12bc 100%); /* IE10+ */
+    background: linear-gradient(to bottom, #42a3f5 0%,#ca12bc 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#42a3f5', endColorstr='#ca12bc',GradientType=0 ); /* IE6-9 */
+    opacity: 0.5;
+    position: absolute;
+    z-index: 98;
+    }
+      .logo{
+        background-image: url('https://s3.amazonaws.com/myfangate.com/vydiaemail/logo.png');
+        position: relative;
+        margin: 50px auto 50px auto;
+        width: 481px;
+        height: 100px;
+        z-index: 99;
+      }
+
+}
+
+//MEDIA QUERIES //
+
+@media screen and (max-device-width: 500px), screen and (max-width: 500px) {
+
+      #headerwrap .logo{
+        background-image: url('https://s3.amazonaws.com/myfangate.com/vydiaemail/logo-small.png');
+        margin: 72px auto 73px auto;
+        width: 320px;
+        height: 67px;
+      }
+
+}
+
+
+
+
+#banner{
+  width:100%;
+  height: 30px;
+  background-color: #eee;
+  .banner-content{
+    max-width: 640px;
+    margin: 0 auto;
+    height: 30px;
+     .socials{
+   float: right;
+   width: 50%;
+ text-align: right;
+ img{
+  padding-top: 5px;
+ }
+ }
+ .subject{
+   float: left;
+   width: 50%;
+    p{
+      margin: 0;
+      padding-top: 8px;
+      margin-bottom: 10px;
+      font-size: 10px;
+    }
+  }
+  }
+}
